@@ -67,7 +67,7 @@ export default {
     async loadUser() {
       this.user = await fetch(
           `${this.$store.getters.getServerUrl}/user`
-      ).then(response => response.json())
+      ).then(response => response.headers)
       console.log(this.user)
     }
   }
