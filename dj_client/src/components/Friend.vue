@@ -19,7 +19,16 @@
 
 <script>
 export default {
-  name: `Friend`
+  name: `Friend`,
+  data() {
+    return {
+      listFriends: []
+    }
+  },
+  created() {
+
+  },
+
 }
 </script>
 
