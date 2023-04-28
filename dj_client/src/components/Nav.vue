@@ -13,8 +13,8 @@
             <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="42" height="42">
           </a>
           <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-            <li><a class="dropdown-item  active" href="http://localhost:8800/index.html">Game</a></li>
-            <li><a class="dropdown-item" href="#">Wiki</a></li>
+            <li><a class="dropdown-item  active" href="http://localhost:8800/index.html" target="_blank">Game</a></li>
+            <li><a class="dropdown-item" href="#" target="_blank">Wiki</a></li>
             <li><a class="dropdown-item" href="#">User page</a></li>
             <li>
               <hr class="dropdown-divider">
