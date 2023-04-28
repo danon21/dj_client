@@ -32,7 +32,7 @@
               <!--   div class="carousel-item {active}" - добавляем только первой кнопке   -->
               <div
                   v-for="achiv in user.achievements" :key="achiv.name"
-                  class="carousel-item active"
+                  class="carousel-item {{achiv.id > 0 ? '' : 'active'}}"
               >
                 <svg
                     class="bd-placeholder-img"
