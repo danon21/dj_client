@@ -3,7 +3,7 @@
     <div class="px-4 py-1 my-5 text-center">
       <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="100" height="100">
       
-      <form class="center-form" method="post" id="auth" action=loadUser()>
+      <form class="center-form" method="get" id="auth" action="user">
         <h1 class="form-header">Dungeons & Dranics</h1>
         <label class="form-question">Login</label>
         <div>
