@@ -100,7 +100,7 @@
           </svg>
           <h2>{{ friend.nickname }}</h2>
           <p>{{ friend.tag }}</p>
-          <p><a class="btn btn-secondary my-2" href="/user/{{friend.nickname}}">View profile >></a></p>
+          <p><a class="btn btn-secondary my-2" href="/user/danone">View profile >></a></p>
         </div>
       </div>
 

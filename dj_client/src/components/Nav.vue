@@ -14,8 +14,8 @@
           </a>
           <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
             <li><a class="dropdown-item  active" href="http://localhost:8800/index.html" target="_blank">Game</a></li>
-            <li><a class="dropdown-item" href="#" target="_blank">Wiki</a></li>
-            <li><a class="dropdown-item" href="#">User page</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/wiki/" target="_blank">Wiki</a></li>
+            <li><a class="dropdown-item" href="/user">User page</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
