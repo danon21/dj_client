@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root{
+    --yellow-accent-color: rgb(255, 217, 0);
+    --yellow-clear-color: rgba(255, 217, 0, 0.8);
+    --gray-basic-highlight-color: #33333d;
+    --gray-basic-color: #34343b;
+    --background-basic-color: #bbb9b9b4;
+    --basic-white: white;
+    --light-gray-color: #bbb9b9;
+    --red-close-color: #d43131;
+    --red-close-hover-color: #af2727;
+
+}
+
+
+/* Модальное окно */
+button.btn.btn-secondary {
+    font: small-caps bold 1em sans-serif;
+    background-color: var(--background-basic-color);
+}
+
+div.modal-content {
+    border-radius: 20px;
+    border-color: var(--gray-basic-highlight-color);
+    border-width: 0.4em;
+    
+}
+
+h5.modal-title {
+    padding: 0% 0% 0% 20%;
+    font: small-caps bold 1.5em sans-serif;
+}
+
+.btn-close.modal-btn {
+    display: inline-flex;
+    text-align: center;
+    background-color: var(--red-close-color);
+    border-radius: 20px;
+    border-color: var(--red-close-color);
+    transition: all 0.3s ease;
+}
+.btn-close.modal-btn:hover{
+    border-color: var(--gray-basic-highlight-color);
+    /* background-color: var(--basic-white); */
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+.close-btn{
+    fill: var(--basic-white);
+    transition: all 0.3s ease;
+}
+/* .close-btn:hover{
+    fill: var(--red-close-hover-color);
+} */
+
+
+/* ШАПКА */
+a.navbar-brand{
+    font-size: 2em;
+}
+
+.navbar-brand {
+    color: var(--basic-white);
+    padding: 5%;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: var(--background-basic-color);
+    min-width: 103.5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: var(--gray-basic-color);
+    padding: 5%;
+    text-decoration: none;
+    display: block;
+    border-radius: 0em;
+    transition: all 0.5s ease;
+    font: small-caps bold 1em sans-serif;
+}
+.dropdown-content a#href2 {
+
+    border-radius: 0em 0em 1em 1em;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--gray-basic-color);
+    border-radius: 1em;
+    color: var(--yellow-accent-color);
+}
+
+.dropdown-content a#href1:hover {
+    border-radius: 1em;
+}
+.dropdown-content a#href2:hover {
+    border-radius: 1em;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 0em 0em 1em 1em;
+}
+
+.dropdown:hover .navbar-brand {
+    background-color: var(--gray-basic-color);
+    border-radius: 1em 1em 0em 0em;
+}
+
+
+
+/* ПРЕДИСЛОВИЕ */
+section{
+    /*background-image: url("../img/back_samovar.png");*/
+    background-clip: border-box;
+    border: solid 1.3em var(--gray-basic-color);
+    border-radius: 15px;
+    margin-top: 1.3em;
+}
+
+h1.fw-light{
+    color: var(--basic-white);
+}
+
+p.text-foreword {
+    color: var(--gray-basic-color);
+    font: small-caps 1.3em sans-serif;
+    padding: 2%;
+    background-color: var(--background-basic-color);
+    border-radius: 10px;
+}
+
+ .btn, button.btn.btn-sm.btn-outline-secondary{
+    font: small-caps bold 1em sans-serif;
+}
+p.card-text{
+    font: small-caps 1em sans-serif;
+    padding-top: 0.5em;
+}
+
+h4.card-header {
+    font: small-caps bold 1.5em sans-serif;
+    padding-left: 0%;
+    background-color: var(--basic-white);
+    border: none;
+}
+
+.btn.btn-primary.my-2, button.btn.btn-sm.btn-outline-secondary{
+    background-color: var(--yellow-clear-color);
+    color: var(--gray-basic-color);
+    border-color: var(--yellow-accent-color);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    padding: 0.1em 0.7em;
+}
+.btn.btn-primary.my-2:hover, button.btn.btn-sm.btn-outline-secondary:hover{
+    background-color: var(--gray-basic-color);
+    color: var(--yellow-accent-color);
+    border-color: var(--yellow-accent-color);
+    border-radius: 20px;
+    padding: 0.1em 0.5em;
+}
+
+.btn.btn-secondary.my-2{
+    background-color: var(--background-basic-color);
+    color: var(--gray-basic-color);
+    border-color: var(--background-basic-color);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    padding: 0.1em 0.7em;
+}
+.btn.btn-secondary.my-2:hover{
+    background-color: var(--gray-basic-color);
+    color: var(--yellow-accent-color);
+    border-color: var(--yellow-accent-color);
+    border-radius: 20px;
+    padding: 0.1em 0.5em;
+}
+
+
+
+/* ГАЛЕРЕЯ САМОВАРОВ */
+div.card.shadow-sm {
+    border-radius: 25px;
+    border: solid 0.3em var(--gray-basic-color);
+}
+
+svg.bd-placeholder-img.card-img-top {
+    border-radius: 19px 19px 0px 0px;
+}
+
+img.image {
+    border-radius: 20px 20px 0px 0px;
+}
+
+textarea.opisanie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: solid 0.16em var(--gray-basic-highlight-color);
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+
+.form-question {
+    font: small-caps bold 1em sans-serif;
+}
