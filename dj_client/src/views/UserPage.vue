@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v_bind="http://www.w3.org/1999/xhtml">
   <div class="userPage">
     <Nav/>
     <hr class="featurette-divider">
@@ -32,7 +32,7 @@
               <!--   div class="carousel-item {active}" - добавляем только первой кнопке   -->
               <div
                   v-for="achiv in user.achievements" :key="achiv.name"
-                  class="carousel-item {{achiv.id > 0 ? '' : 'active'}}"
+                  v_bind: class="carousel-item {{achiv.id > 0 ? '' : 'active'}}"
               >
                 <svg
                     class="bd-placeholder-img"
