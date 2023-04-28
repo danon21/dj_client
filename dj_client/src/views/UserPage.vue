@@ -21,7 +21,7 @@
             <div class="carousel-indicators">
               <!--   class="active" - выбранный начальныйй слайд, нужно создавать остальные без этого говна   -->
               <button
-                  v-for="achiv in user.achievements" :key="achiv.name"
+                  v-for="achiv in user.achievements" :key="achiv.id"
                   type="button"
                   data-bs-target="#myCarousel"
                   data-bs-slide-to="{{achiv.id}}"
@@ -32,7 +32,7 @@
               <!--   div class="carousel-item {active}" - добавляем только первой кнопке   -->
               <div
                   v-for="achiv in user.achievements" :key="achiv.name"
-                  class="carousel-item {{achiv.id > 1  ? '' : 'active'}}"
+                  class="carousel-item active"
               >
                 <svg
                     class="bd-placeholder-img"
@@ -83,10 +83,11 @@
       <h2>Friends</h2>
       <hr class="featurette-divider">
 
-      <div
-          class="friend"
-      >
-        <div class="col-lg-4">
+      <div class="friend">
+        <div
+            v-for="friend in user.friends" :key="friend.id"
+            class="col-lg-4"
+        >
           <svg
               class="bd-placeholder-img rounded-circle"
               width="140" height="140"
@@ -97,9 +98,9 @@
             <rect width="100%" height="100%" fill="#777"></rect>
             <text x="40%" y="50%" fill="#111">DK</text>
           </svg>
-          <h2>{NAME}</h2>
-          <p>{STATUS}</p>
-          <p><a class="btn btn-secondary my-2" href="#">View profile >></a></p>
+          <h2>{{ friend.nickname }}</h2>
+          <p>{{ friend.tag }}</p>
+          <p><a class="btn btn-secondary my-2" href="/user/{{friend.nickname}}">View profile >></a></p>
         </div>
       </div>
 
