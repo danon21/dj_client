@@ -25,12 +25,15 @@
                   type="button"
                   data-bs-target="#myCarousel"
                   data-bs-slide-to="{{achiv.id}}"
-                  class="{{achiv.id > 0 ? '', 'active'}}"
+                  class=""
               ></button>
             </div>
             <div class="carousel-inner">
               <!--   div class="carousel-item {active}" - добавляем только первой кнопке   -->
-              <div class="carousel-item active">
+              <div
+                  v-for="achiv in user.achievements" :key="achiv.name"
+                  class="carousel-item"
+              >
                 <svg
                     class="bd-placeholder-img"
                     width="100%" height="100%"
@@ -56,8 +59,8 @@
                       </div>
                       <div class="col-md-10 order-md-2">
                         <div class="achievement">
-                          <h4>{TITLE ACHIEV}</h4>
-                          <p>{DISCRIPTION ACHIEV}</p>
+                          <h4>{{ achiv.name }}</h4>
+                          <!--                          <p>Описание достижения {{achiv.name}}</p>-->
                         </div>
                       </div>
                     </div>
@@ -80,7 +83,9 @@
       <h2>Friends</h2>
       <hr class="featurette-divider">
 
-      <div class="friend">
+      <div
+          class="friend"
+      >
         <div class="col-lg-4">
           <svg
               class="bd-placeholder-img rounded-circle"
