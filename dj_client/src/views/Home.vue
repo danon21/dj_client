@@ -2,7 +2,7 @@
   <div class="home">
     <Nav/>
     <div class="d-grid gap-xl-3 col-4 mx-auto">
-        <a class="btn btn-primary btn-lg" type="button" href="http://localhost:8800/index.html">Start game >></a>
+        <a class="btn btn-primary btn-lg" type="button" href="http://localhost:8800/index.html" target="_blank">Start game >></a>
     </div>
   </div>
 </template>
